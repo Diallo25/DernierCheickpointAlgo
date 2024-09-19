@@ -1,0 +1,15 @@
+FUNCTION puissance(X : entier , n : entier) : entier
+   Debut 
+     Si n = 0 alors 
+        Retourne  1
+     Sinon
+       Retourne X * puissance(X , n - 1)
+     fin Si
+   Fin
+VAR
+    X , n : entier 
+BEGIN
+    Ecrire("Veuillew saisir les valeur de X et n : ")
+    Lire( X, n )
+    Ecrire("La puissance de " , X , " par " , n , " est : " , puissance ( X , n ) )
+END

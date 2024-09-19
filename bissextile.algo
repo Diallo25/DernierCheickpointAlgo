@@ -1,0 +1,19 @@
+PROCEDURE bissectille_annee(a : entier)
+    Debut 
+      if ( ((a mod 4 = 0) et (a mod 100 <> 0)) ou (a mod 400 = 0)) alors
+        Ecrire ( a , " est une annee bissextile")
+      Sinon 
+         Ecrire(a, "n'est pas une annee bissextile")
+      fin Si
+    Fin
+VAR
+    annee : entier
+BEGIN
+   Ecrir("Donner une annee : ")
+   Lire(annee)
+   bissextille_annee(annee)
+   bissextille_annee(2000)
+   bissextille_annee(2021)
+   bissextille_annee(1925)
+   bissextille_annee(1980)
+END
